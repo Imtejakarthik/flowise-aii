@@ -1,4 +1,23 @@
 # Flowise Docker Hub Image
+🐳 Docker
+Docker Compose
+Clone the Flowise project
+Go to docker folder at the root of the project
+Copy .env.example file, paste it into the same location, and rename to .env file
+docker compose up -d
+Open http://localhost:3000
+You can bring the containers down by docker compose stop
+Docker Image
+Build the image locally:
+
+docker build --no-cache -t flowise .
+Run image:
+
+docker run -d --name flowise -p 3000:3000 flowise
+Stop image:
+
+docker stop flowise
+
 
 Starts Flowise from [DockerHub Image](https://hub.docker.com/r/flowiseai/flowise)
 
